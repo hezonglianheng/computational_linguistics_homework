@@ -28,10 +28,10 @@ DATASET_INFO: dict[str, dict[str, str]] = {
         'file_path': 'datasets/commonsense/com_2/main.json',
         'file_format': 'json'
     }, 
-    'Score': {
-        'source': 'web', 
-        'path': 'Pokerwf/KnowLogic', 
-        'split': 'test', 
+    'KnowLogic': {
+        'source': 'local', 
+        'path': 'datasets/commonsense/KnowLogic/test.jsonl', 
+        'file_format': "jsonl"
     }
 }
 
