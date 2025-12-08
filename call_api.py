@@ -49,13 +49,13 @@ def _callapi(api_key: str, base_url: str, model: str, context: str) -> dict[str,
         return {
             'response': response.choices[0].message.content,
             'status': "success", 
-            'token_cost': response.usage.total_tokens, 
+            'completion_token_cost': response.usage.completion_tokens, 
         }
     except Exception as e:
         return {
             'response': str(e),
             'status': "error", 
-            'token_cost': 0,
+            'completion_token_cost': 0,
         }
 
 async def _callapi_async(api_key: str, base_url: str, model: str, context: str) -> dict[str, Any]:
@@ -157,26 +157,30 @@ async def batch_call_api_async(model_name: str, contexts: list[str], max_concurr
 
     semaphore = asyncio.Semaphore(max_concurrency)
 
-    async def _call_with_random_sleep(context: str) -> dict[str, Any]:
+    async def _call_with_random_sleep(idx: int, context: str) -> tuple[int, dict[str, Any]]:
         async with semaphore:
             # await asyncio.sleep(random.uniform(0, 1))
-            return await _callapi_async(api_key, base_url, model, context)
+            res = await _callapi_async(api_key, base_url, model, context)
+            res["context"] = context  # 让调用方可以直接定位对应输入
+            return idx, res
 
-    tasks = [asyncio.create_task(_call_with_random_sleep(context)) for context in contexts]
+    tasks = [asyncio.create_task(_call_with_random_sleep(i, context)) for i, context in enumerate(contexts)]
 
-    results: list[dict[str, Any]] = []
+    indexed_results: list[tuple[int, dict[str, Any]]] = []
     completed = 0
     total = len(contexts)
     start_time = time.time()
     for coro in asyncio.as_completed(tasks):
-        result = await coro
-        results.append(result)
+        idx, result = await coro
+        indexed_results.append((idx, result))
         completed += 1
         if completed % 50 == 0 or completed == total:
             elapsed = time.time() - start_time
-            success_rate = sum(1 for r in results if r['status'] == 'success') / completed * 100
+            success_rate = sum(1 for _, r in indexed_results if r['status'] == 'success') / completed * 100
             print(f"已完成 {completed} / {total} 个请求，耗时 {elapsed:.2f} 秒，成功率 {success_rate:.2f}%")
 
+    indexed_results.sort(key=lambda item: item[0])
+    results = [result for _, result in indexed_results]
     return results
 
 def batch_call_api_async_wrapper(model_name: str, contexts: list[str], max_concurrency: int = 5) -> list[dict[str, Any]]:

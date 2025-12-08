@@ -3,19 +3,19 @@
         "model_name": "deepseek-r1-distill-qwen-1.5b", 
         "api_key": "sk-5d700370743a4918b719a377defcf558", 
         "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
-        "max_concurrency": 128
+        "max_concurrency": 8
     }, 
     "deepseek-r1-distill-qwen-7b": {
         "model_name": "deepseek-r1-distill-qwen-7b", 
         "api_key": "sk-5d700370743a4918b719a377defcf558", 
         "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
-        "max_concurrency": 128
+        "max_concurrency": 8
     }, 
     "deepseek-r1-distill-llama-8b": {
         "model_name": "deepseek-r1-distill-llama-8b", 
         "api_key": "sk-5d700370743a4918b719a377defcf558", 
         "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1", 
-        "max_concurrency": 128
+        "max_concurrency": 8
     }, 
     "qwen3-0.6b": {
         "model_name": "qwen3-0.6b", 
@@ -45,7 +45,7 @@
         "model_name": "glm-4-flash-250414", 
         "api_key": "dddd4a7cd288485893d56c45536b44f0.oyMPP1jZDIgB8uYI", 
         "base_url": "https://open.bigmodel.cn/api/paas/v4", 
-        "max_concurrency": 16
+        "max_concurrency": 8
     }, 
     "llama3-8b-instruct": {
         "model_name": "llama3-8b-instruct", 
