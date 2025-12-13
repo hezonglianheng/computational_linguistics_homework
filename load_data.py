@@ -30,7 +30,7 @@ DATASET_INFO: dict[str, dict[str, str]] = {
     }, 
     'KnowLogic': {
         'source': 'local', 
-        'path': 'datasets/commonsense/KnowLogic/test.jsonl', 
+        'file_path': 'datasets/commonsense/KnowLogic/test.jsonl', 
         'file_format': "jsonl"
     }
 }
@@ -132,7 +132,7 @@ def load_data(dataset_name: str) -> list[dict[str, str]]:
             }
             for item in ds
         ]
-    elif dataset_name == 'Score':
+    elif dataset_name == 'KnowLogic':
         final_dataset = [
             {
                 'question': item['text'] + '\n' + item['question'] + '\n' + '\t'.join([f"{k}: {v}" for k, v in item['options'].items()]),
@@ -151,6 +151,7 @@ def load_data(dataset_name: str) -> list[dict[str, str]]:
             for item in ds
         ]
 
+    print(final_dataset[0])
     return final_dataset
 
     
