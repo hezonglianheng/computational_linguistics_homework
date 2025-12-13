@@ -37,6 +37,7 @@ def _callapi(api_key: str, base_url: str, model: str, context: str) -> dict[str,
                 messages=[
                     {"role": "user", "content": context}
                 ],
+                temperature=0.0, 
                 extra_body={"enable_thinking": False}  # 关闭“思考”模式
             )
         else:
@@ -44,7 +45,8 @@ def _callapi(api_key: str, base_url: str, model: str, context: str) -> dict[str,
                 model=model,
                 messages=[
                     {"role": "user", "content": context}
-                ]
+                ], 
+                temperature=0.0,
             )
         return {
             'response': response.choices[0].message.content,
@@ -69,6 +71,7 @@ async def _callapi_async(api_key: str, base_url: str, model: str, context: str) 
                 messages=[
                     {"role": "user", "content": context}
                 ],
+                temperature=0.0,
                 extra_body={"enable_thinking": False}
             )
         else:
@@ -76,7 +79,8 @@ async def _callapi_async(api_key: str, base_url: str, model: str, context: str) 
                 model=model,
                 messages=[
                     {"role": "user", "content": context}
-                ]
+                ], 
+                temperature=0.0,
             )
         return {
             'response': response.choices[0].message.content,
@@ -152,7 +156,7 @@ async def batch_call_api_async(model_name: str, contexts: list[str], max_concurr
     api_key = model_info.get('api_key', '')
     base_url = model_info.get('base_url', '')
     model = model_info.get('model_name', '')
-    max_concurrency = model_info.get('max_concurrency', max_concurrency) # 使用模型配置的最大并发数
+    # max_concurrency = model_info.get('max_concurrency', max_concurrency) # 使用模型配置的最大并发数
     assert api_key and base_url and model, f"Incomplete model info for '{model_name}'."
 
     semaphore = asyncio.Semaphore(max_concurrency)
@@ -161,7 +165,7 @@ async def batch_call_api_async(model_name: str, contexts: list[str], max_concurr
         async with semaphore:
             # await asyncio.sleep(random.uniform(0, 1))
             res = await _callapi_async(api_key, base_url, model, context)
-            res["context"] = context  # 让调用方可以直接定位对应输入
+            # res["context"] = context  # 让调用方可以直接定位对应输入
             return idx, res
 
     tasks = [asyncio.create_task(_call_with_random_sleep(i, context)) for i, context in enumerate(contexts)]
