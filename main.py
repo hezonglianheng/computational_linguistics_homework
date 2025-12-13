@@ -35,7 +35,7 @@ def run():
             print(f"Using model: {model_name}")
             contexts = [item['question'] for item in dataset]
             print(f"Calling API for {len(contexts)} contexts...")
-            responses = call_api.batch_call_api_async_wrapper(model_name, contexts, max_concurrency=5)
+            responses = call_api.batch_call_api_async_wrapper(model_name, contexts, max_concurrency=4)
             print(f"API calls completed for model '{model_name}' on dataset '{dataset_name}'.")
             # 保存结果
             result = [{'question': ctx} | resp for ctx, resp in zip(contexts, responses)]
