@@ -5,7 +5,7 @@ import call_api
 import json
 
 USE_DATASETS = [
-    "Com2",
+    "KnowLogic",
 ]
 
 USE_MODELS = [
@@ -34,11 +34,12 @@ def run():
         for model_name in USE_MODELS:
             print(f"Using model: {model_name}")
             contexts = [item['question'] for item in dataset]
+            answers = [item['answer'] for item in dataset]
             print(f"Calling API for {len(contexts)} contexts...")
             responses = call_api.batch_call_api_async_wrapper(model_name, contexts, max_concurrency=4)
             print(f"API calls completed for model '{model_name}' on dataset '{dataset_name}'.")
             # 保存结果
-            result = [{'question': ctx} | resp for ctx, resp in zip(contexts, responses)]
+            result = [{'question': ctx} | resp | {'answer': ans} for ctx, resp, ans in zip(contexts, responses, answers)]
             result_path = f"{RESULT_DIR}/{dataset_name}_{model_name}_results.json"
             with open(result_path, 'w', encoding='utf8') as f:
                 json.dump(result, f, ensure_ascii=False, indent=4)
