@@ -51,5 +51,10 @@
         "model_name": "llama3-8b-instruct", 
         "api_key": "sk-zk2d85fc274dd546dfcb6bdbf70ae8617e766619ae6df470", 
         "base_url": "https://api.zhizengzeng.com/v1"
+    }, 
+    "deepseek-V3.2": {
+        "model_name": "deepseek-chat", 
+        "api_key": "sk-6b4ee2c881724f518c3e00aa3311ebd1", 
+        "base_url": "https://api.deepseek.com/v1"
     }
 }

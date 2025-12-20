@@ -2,6 +2,7 @@
 
 import load_data
 import call_api
+import extract_answers_from_response as extract_answers
 import json
 
 USE_DATASETS = [
@@ -38,8 +39,10 @@ def run():
             print(f"Calling API for {len(contexts)} contexts...")
             responses = call_api.batch_call_api_async_wrapper(model_name, contexts, max_concurrency=4)
             print(f"API calls completed for model '{model_name}' on dataset '{dataset_name}'.")
+            # 提取答案
+            responses_with_answers = extract_answers.extract_answer_from_responses(responses)
             # 保存结果
-            result = [{'question': ctx} | resp | {'answer': ans} for ctx, resp, ans in zip(contexts, responses, answers)]
+            result = [{'question': ctx} | resp | {'answer': ans} for ctx, resp, ans in zip(contexts, responses_with_answers, answers)]
             result_path = f"{RESULT_DIR}/{dataset_name}_{model_name}_results.json"
             with open(result_path, 'w', encoding='utf8') as f:
                 json.dump(result, f, ensure_ascii=False, indent=4)
