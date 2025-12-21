@@ -54,6 +54,8 @@ if __name__ == "__main__":
     parser.add_argument("--input_path", type=str, required=True, help="输入的JSON文件路径，包含模型response")
     parser.add_argument("--output_path", type=str, required=True, help="输出的JSON文件路径，包含提取的答案")
     args = parser.parse_args()
+
+    call_api.load_model_info()
     with open(args.input_path, 'r', encoding='utf8') as f:
         data = json.load(f)
     extracted_results = extract_answer_from_responses(data)
