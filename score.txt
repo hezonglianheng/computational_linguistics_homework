@@ -1,0 +1,36 @@
+完整试题：
+
+KnowLogic_qwen3-0.6b_results.json
+试题数量: 5400
+模型回答的平均得分（strict）: 0.2080
+
+KnowLogic_qwen3-1.7b_results.json
+试题数量: 5400
+模型回答的平均得分（strict）: 0.2744
+
+KnowLogic_qwen3-4b_results.json
+试题数量: 5400
+模型回答的平均得分（strict）: 0.3959
+
+KnowLogic_qwen3-8b_results.json
+试题数量: 5400
+模型回答的平均得分（strict）: 0.4054
+
+---------
+重复试题：
+
+KnowLogic_qwen3-0.6b_results.json
+试题数量: 84
+模型回答的平均得分（strict）: 0.2976
+
+KnowLogic_qwen3-1.7b_results.json
+试题数量: 322
+模型回答的平均得分（strict）: 0.2857
+
+KnowLogic_qwen3-4b_results.json
+试题数量: 147
+模型回答的平均得分（strict）: 0.2857
+
+KnowLogic_qwen3-8b_results.json
+试题数量: 127
+模型回答的平均得分（strict）: 0.1969
