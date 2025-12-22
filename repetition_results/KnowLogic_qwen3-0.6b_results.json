@@ -8,6 +8,14 @@
         "answer": [
             "D"
         ],
+        "model_extract_response": {
+            "response": "B",
+            "status": "success",
+            "token_cost": 1502
+        },
+        "extracted_answers": [
+            "B"
+        ],
         "repetitions": [
             {
                 "repetition_text": "- Not a clothing → ✅",
@@ -36,6 +44,14 @@
         "answer": [
             "B"
         ],
+        "model_extract_response": {
+            "response": "C",
+            "status": "success",
+            "token_cost": 1461
+        },
+        "extracted_answers": [
+            "C"
+        ],
         "repetitions": [
             {
                 "repetition_text": "→ Total = 8 → ❌",
@@ -52,6 +68,14 @@
         "answer": [
             "B"
         ],
+        "model_extract_response": {
+            "response": "B",
+            "status": "success",
+            "token_cost": 658
+        },
+        "extracted_answers": [
+            "B"
+        ],
         "repetitions": [
             {
                 "repetition_text": "   - So, it can be one of: **duck seasoned with soy sauce**, **purslane**, **broad bean**, or **purse**",
@@ -66,6 +90,14 @@
         "status": "success",
         "token_cost": 1602,
         "answer": [
+            "B"
+        ],
+        "model_extract_response": {
+            "response": "B",
+            "status": "success",
+            "token_cost": 1574
+        },
+        "extracted_answers": [
             "B"
         ],
         "repetitions": [
@@ -88,6 +120,14 @@
         "answer": [
             "B"
         ],
+        "model_extract_response": {
+            "response": "C",
+            "status": "success",
+            "token_cost": 637
+        },
+        "extracted_answers": [
+            "C"
+        ],
         "repetitions": [
             {
                 "repetition_text": "  - Not an arthropod → okay.  ",
@@ -102,6 +142,14 @@
         "status": "success",
         "token_cost": 1003,
         "answer": [
+            "D"
+        ],
+        "model_extract_response": {
+            "response": "D",
+            "status": "success",
+            "token_cost": 906
+        },
+        "extracted_answers": [
             "D"
         ],
         "repetitions": [
@@ -119,6 +167,14 @@
         "token_cost": 1482,
         "answer": [
             "D"
+        ],
+        "model_extract_response": {
+            "response": "C",
+            "status": "success",
+            "token_cost": 1226
+        },
+        "extracted_answers": [
+            "C"
         ],
         "repetitions": [
             {
@@ -138,6 +194,14 @@
         "status": "success",
         "token_cost": 2430,
         "answer": [
+            "B"
+        ],
+        "model_extract_response": {
+            "response": "B",
+            "status": "success",
+            "token_cost": 2219
+        },
+        "extracted_answers": [
             "B"
         ],
         "repetitions": [
@@ -160,6 +224,14 @@
         "answer": [
             "A"
         ],
+        "model_extract_response": {
+            "response": "A",
+            "status": "success",
+            "token_cost": 1550
+        },
+        "extracted_answers": [
+            "A"
+        ],
         "repetitions": [
             {
                 "repetition_text": "且其左邻在蔬菜的左上方",
@@ -174,6 +246,14 @@
         "status": "success",
         "token_cost": 1491,
         "answer": [
+            "C"
+        ],
+        "model_extract_response": {
+            "response": "C",
+            "status": "success",
+            "token_cost": 1266
+        },
+        "extracted_answers": [
             "C"
         ],
         "repetitions": [
@@ -196,6 +276,14 @@
         "answer": [
             "B"
         ],
+        "model_extract_response": {
+            "response": "A",
+            "status": "success",
+            "token_cost": 1148
+        },
+        "extracted_answers": [
+            "A"
+        ],
         "repetitions": [
             {
                 "repetition_text": "- 第三层：生菜  ",
@@ -212,6 +300,14 @@
         "answer": [
             "D"
         ],
+        "model_extract_response": {
+            "response": "A",
+            "status": "success",
+            "token_cost": 1174
+        },
+        "extracted_answers": [
+            "A"
+        ],
         "repetitions": [
             {
                 "repetition_text": "### **从“绿色的蔬菜和工具左右相邻”**",
@@ -227,6 +323,14 @@
         "token_cost": 1971,
         "answer": [
             "B"
+        ],
+        "model_extract_response": {
+            "response": "D",
+            "status": "success",
+            "token_cost": 1704
+        },
+        "extracted_answers": [
+            "D"
         ],
         "repetitions": [
             {
@@ -249,6 +353,14 @@
             "A",
             "C"
         ],
+        "model_extract_response": {
+            "response": "B",
+            "status": "success",
+            "token_cost": 1337
+        },
+        "extracted_answers": [
+            "B"
+        ],
         "repetitions": [
             {
                 "repetition_text": "加工食品在它右边",
@@ -265,6 +377,14 @@
         "answer": [
             "A"
         ],
+        "model_extract_response": {
+            "response": "D",
+            "status": "success",
+            "token_cost": 1231
+        },
+        "extracted_answers": [
+            "D"
+        ],
         "repetitions": [
             {
                 "repetition_text": "米粥在工具的**左边**",
@@ -279,6 +399,14 @@
         "status": "success",
         "token_cost": 1313,
         "answer": [
+            "D"
+        ],
+        "model_extract_response": {
+            "response": "D",
+            "status": "success",
+            "token_cost": 1171
+        },
+        "extracted_answers": [
             "D"
         ],
         "repetitions": [
@@ -301,6 +429,14 @@
         "answer": [
             "B"
         ],
+        "model_extract_response": {
+            "response": "A",
+            "status": "success",
+            "token_cost": 1045
+        },
+        "extracted_answers": [
+            "A"
+        ],
         "repetitions": [
             {
                 "repetition_text": "右侧是烤鸭；",
@@ -321,6 +457,14 @@
         "answer": [
             "B"
         ],
+        "model_extract_response": {
+            "response": "D",
+            "status": "success",
+            "token_cost": 683
+        },
+        "extracted_answers": [
+            "D"
+        ],
         "repetitions": [
             {
                 "repetition_text": "- 烟草（黄芪）在第三层",
@@ -338,6 +482,12 @@
             "B",
             "C"
         ],
+        "model_extract_response": {
+            "response": "无法获得答案",
+            "status": "success",
+            "token_cost": 8262
+        },
+        "extracted_answers": [],
         "repetitions": [
             {
                 "repetition_text": "|",
@@ -353,6 +503,14 @@
         "token_cost": 1608,
         "answer": [
             "A",
+            "C"
+        ],
+        "model_extract_response": {
+            "response": "C",
+            "status": "success",
+            "token_cost": 1369
+        },
+        "extracted_answers": [
             "C"
         ],
         "repetitions": [
@@ -372,6 +530,14 @@
             "A",
             "B"
         ],
+        "model_extract_response": {
+            "response": "A",
+            "status": "success",
+            "token_cost": 2049
+        },
+        "extracted_answers": [
+            "A"
+        ],
         "repetitions": [
             {
                 "repetition_text": "不是蔬菜 → 不行",
@@ -390,6 +556,14 @@
             "B",
             "C"
         ],
+        "model_extract_response": {
+            "response": "A",
+            "status": "success",
+            "token_cost": 1299
+        },
+        "extracted_answers": [
+            "A"
+        ],
         "repetitions": [
             {
                 "repetition_text": "西边是耙子**",
@@ -404,6 +578,14 @@
         "status": "success",
         "token_cost": 1686,
         "answer": [
+            "B"
+        ],
+        "model_extract_response": {
+            "response": "B",
+            "status": "success",
+            "token_cost": 1492
+        },
+        "extracted_answers": [
             "B"
         ],
         "repetitions": [
@@ -421,6 +603,14 @@
         "token_cost": 1967,
         "answer": [
             "B"
+        ],
+        "model_extract_response": {
+            "response": "A",
+            "status": "success",
+            "token_cost": 1691
+        },
+        "extracted_answers": [
+            "A"
         ],
         "repetitions": [
             {
@@ -444,6 +634,14 @@
         "status": "success",
         "token_cost": 1881,
         "answer": [
+            "B"
+        ],
+        "model_extract_response": {
+            "response": "B",
+            "status": "success",
+            "token_cost": 1628
+        },
+        "extracted_answers": [
             "B"
         ],
         "repetitions": [
@@ -474,6 +672,12 @@
         "answer": [
             "D"
         ],
+        "model_extract_response": {
+            "response": "无法获得答案",
+            "status": "success",
+            "token_cost": 8232
+        },
+        "extracted_answers": [],
         "repetitions": [
             {
                 "repetition_text": "所以赵燕是赵芳的**女儿**",
@@ -502,6 +706,14 @@
         "answer": [
             "B"
         ],
+        "model_extract_response": {
+            "response": "B",
+            "status": "success",
+            "token_cost": 1257
+        },
+        "extracted_answers": [
+            "B"
+        ],
         "repetitions": [
             {
                 "repetition_text": "赵婷是赵琳的女儿",
@@ -526,6 +738,12 @@
         "answer": [
             "B"
         ],
+        "model_extract_response": {
+            "response": "无法获得答案",
+            "status": "success",
+            "token_cost": 1247
+        },
+        "extracted_answers": [],
         "repetitions": [
             {
                 "repetition_text": "赵刚是赵涛的叔兄  ",
@@ -550,6 +768,14 @@
         "answer": [
             "D"
         ],
+        "model_extract_response": {
+            "response": "A",
+            "status": "success",
+            "token_cost": 1386
+        },
+        "extracted_answers": [
+            "A"
+        ],
         "repetitions": [
             {
                 "repetition_text": "- 赵强是赵芳的叔父",
@@ -568,6 +794,14 @@
         "status": "success",
         "token_cost": 1713,
         "answer": [
+            "B"
+        ],
+        "model_extract_response": {
+            "response": "B",
+            "status": "success",
+            "token_cost": 1496
+        },
+        "extracted_answers": [
             "B"
         ],
         "repetitions": [
@@ -598,6 +832,15 @@
         "answer": [
             "C"
         ],
+        "model_extract_response": {
+            "response": "B、C",
+            "status": "success",
+            "token_cost": 1258
+        },
+        "extracted_answers": [
+            "B",
+            "C"
+        ],
         "repetitions": [
             {
                 "repetition_text": "- 赵力是赵芳的外公",
@@ -622,6 +865,12 @@
         "answer": [
             "B"
         ],
+        "model_extract_response": {
+            "response": "无法获得答案",
+            "status": "success",
+            "token_cost": 1338
+        },
+        "extracted_answers": [],
         "repetitions": [
             {
                 "repetition_text": "赵阳是赵刚的父亲",
@@ -636,6 +885,14 @@
         "status": "success",
         "token_cost": 1200,
         "answer": [
+            "B"
+        ],
+        "model_extract_response": {
+            "response": "B",
+            "status": "success",
+            "token_cost": 985
+        },
+        "extracted_answers": [
             "B"
         ],
         "repetitions": [
@@ -670,6 +927,14 @@
         "answer": [
             "D"
         ],
+        "model_extract_response": {
+            "response": "A",
+            "status": "success",
+            "token_cost": 8239
+        },
+        "extracted_answers": [
+            "A"
+        ],
         "repetitions": [
             {
                 "repetition_text": "赵涛是赵晓伟的女儿",
@@ -685,6 +950,14 @@
         "token_cost": 1126,
         "answer": [
             "B"
+        ],
+        "model_extract_response": {
+            "response": "D",
+            "status": "success",
+            "token_cost": 915
+        },
+        "extracted_answers": [
+            "D"
         ],
         "repetitions": [
             {
@@ -702,6 +975,12 @@
         "answer": [
             "B"
         ],
+        "model_extract_response": {
+            "response": "无法获得答案",
+            "status": "success",
+            "token_cost": 1658
+        },
+        "extracted_answers": [],
         "repetitions": [
             {
                 "repetition_text": "- 赵阳是赵刚的奶奶的外甥的女婿  ",
@@ -725,6 +1004,14 @@
         "token_cost": 1744,
         "answer": [
             "C"
+        ],
+        "model_extract_response": {
+            "response": "A",
+            "status": "success",
+            "token_cost": 1469
+        },
+        "extracted_answers": [
+            "A"
         ],
         "repetitions": [
             {
@@ -754,6 +1041,14 @@
         "answer": [
             "A"
         ],
+        "model_extract_response": {
+            "response": "D",
+            "status": "success",
+            "token_cost": 1270
+        },
+        "extracted_answers": [
+            "D"
+        ],
         "repetitions": [
             {
                 "repetition_text": "赵婷是赵力的**女儿**",
@@ -774,6 +1069,14 @@
         "answer": [
             "B"
         ],
+        "model_extract_response": {
+            "response": "A",
+            "status": "success",
+            "token_cost": 1263
+        },
+        "extracted_answers": [
+            "A"
+        ],
         "repetitions": [
             {
                 "repetition_text": "赵婷是赵龙的闺女",
@@ -790,6 +1093,16 @@
         "answer": [
             "C"
         ],
+        "model_extract_response": {
+            "response": "A、C、D",
+            "status": "success",
+            "token_cost": 1150
+        },
+        "extracted_answers": [
+            "A",
+            "C",
+            "D"
+        ],
         "repetitions": [
             {
                 "repetition_text": "赵强是赵晓静的儿子",
@@ -804,6 +1117,14 @@
         "status": "success",
         "token_cost": 2127,
         "answer": [
+            "A"
+        ],
+        "model_extract_response": {
+            "response": "A",
+            "status": "success",
+            "token_cost": 1916
+        },
+        "extracted_answers": [
             "A"
         ],
         "repetitions": [
@@ -828,6 +1149,14 @@
         "status": "success",
         "token_cost": 1831,
         "answer": [
+            "A"
+        ],
+        "model_extract_response": {
+            "response": "A",
+            "status": "success",
+            "token_cost": 1582
+        },
+        "extracted_answers": [
             "A"
         ],
         "repetitions": [
@@ -866,6 +1195,14 @@
         "answer": [
             "B"
         ],
+        "model_extract_response": {
+            "response": "B",
+            "status": "success",
+            "token_cost": 1324
+        },
+        "extracted_answers": [
+            "B"
+        ],
         "repetitions": [
             {
                 "repetition_text": "→ 赵强是赵玲的父亲",
@@ -885,6 +1222,14 @@
         "token_cost": 8398,
         "answer": [
             "D"
+        ],
+        "model_extract_response": {
+            "response": "B",
+            "status": "success",
+            "token_cost": 7883
+        },
+        "extracted_answers": [
+            "B"
         ],
         "repetitions": [
             {
@@ -910,6 +1255,15 @@
         "answer": [
             "B"
         ],
+        "model_extract_response": {
+            "response": "B、C",
+            "status": "success",
+            "token_cost": 7326
+        },
+        "extracted_answers": [
+            "B",
+            "C"
+        ],
         "repetitions": [
             {
                 "repetition_text": "赵强是赵强的哥哥",
@@ -929,6 +1283,14 @@
         "token_cost": 1812,
         "answer": [
             "D"
+        ],
+        "model_extract_response": {
+            "response": "A",
+            "status": "success",
+            "token_cost": 1577
+        },
+        "extracted_answers": [
+            "A"
         ],
         "repetitions": [
             {
@@ -966,6 +1328,14 @@
         "answer": [
             "C"
         ],
+        "model_extract_response": {
+            "response": "D",
+            "status": "success",
+            "token_cost": 1132
+        },
+        "extracted_answers": [
+            "D"
+        ],
         "repetitions": [
             {
                 "repetition_text": "- 赵力是赵威的哥哥的女婿",
@@ -982,6 +1352,12 @@
         "answer": [
             "B"
         ],
+        "model_extract_response": {
+            "response": "无法获得答案",
+            "status": "success",
+            "token_cost": 7797
+        },
+        "extracted_answers": [],
         "repetitions": [
             {
                 "repetition_text": "- 赵志强是赵丽的奶奶的外甥",
@@ -1014,6 +1390,14 @@
         "answer": [
             "A"
         ],
+        "model_extract_response": {
+            "response": "B",
+            "status": "success",
+            "token_cost": 806
+        },
+        "extracted_answers": [
+            "B"
+        ],
         "repetitions": [
             {
                 "repetition_text": "→ 赵婷是赵晓丽的儿子",
@@ -1037,6 +1421,14 @@
         "token_cost": 1664,
         "answer": [
             "B"
+        ],
+        "model_extract_response": {
+            "response": "A",
+            "status": "success",
+            "token_cost": 1392
+        },
+        "extracted_answers": [
+            "A"
         ],
         "repetitions": [
             {
@@ -1062,6 +1454,14 @@
         "answer": [
             "D"
         ],
+        "model_extract_response": {
+            "response": "B",
+            "status": "success",
+            "token_cost": 1083
+        },
+        "extracted_answers": [
+            "B"
+        ],
         "repetitions": [
             {
                 "repetition_text": "而赵强是赵子越的父亲",
@@ -1086,6 +1486,16 @@
         "answer": [
             "A"
         ],
+        "model_extract_response": {
+            "response": "A、C、D",
+            "status": "success",
+            "token_cost": 1446
+        },
+        "extracted_answers": [
+            "A",
+            "C",
+            "D"
+        ],
         "repetitions": [
             {
                 "repetition_text": "→ 赵强是赵丽的叔叔  ",
@@ -1106,6 +1516,15 @@
         "answer": [
             "C"
         ],
+        "model_extract_response": {
+            "response": "A、B",
+            "status": "success",
+            "token_cost": 1298
+        },
+        "extracted_answers": [
+            "A",
+            "B"
+        ],
         "repetitions": [
             {
                 "repetition_text": "赵晓丽是赵婷的爸爸的嫂子",
@@ -1121,6 +1540,14 @@
         "token_cost": 2496,
         "answer": [
             "C"
+        ],
+        "model_extract_response": {
+            "response": "B",
+            "status": "success",
+            "token_cost": 2137
+        },
+        "extracted_answers": [
+            "B"
         ],
         "repetitions": [
             {
@@ -1158,6 +1585,14 @@
         "answer": [
             "C"
         ],
+        "model_extract_response": {
+            "response": "C",
+            "status": "success",
+            "token_cost": 1570
+        },
+        "extracted_answers": [
+            "C"
+        ],
         "repetitions": [
             {
                 "repetition_text": "赵志强是赵建国的父亲",
@@ -1182,6 +1617,14 @@
         "answer": [
             "C"
         ],
+        "model_extract_response": {
+            "response": "B",
+            "status": "success",
+            "token_cost": 1256
+        },
+        "extracted_answers": [
+            "B"
+        ],
         "repetitions": [
             {
                 "repetition_text": "- 赵丹是赵晓丽的姐姐",
@@ -1200,6 +1643,14 @@
         "status": "success",
         "token_cost": 2054,
         "answer": [
+            "B"
+        ],
+        "model_extract_response": {
+            "response": "B",
+            "status": "success",
+            "token_cost": 1764
+        },
+        "extracted_answers": [
             "B"
         ],
         "repetitions": [
@@ -1238,6 +1689,14 @@
         "answer": [
             "D"
         ],
+        "model_extract_response": {
+            "response": "A",
+            "status": "success",
+            "token_cost": 1111
+        },
+        "extracted_answers": [
+            "A"
+        ],
         "repetitions": [
             {
                 "repetition_text": "赵力是赵刚的弟弟",
@@ -1262,6 +1721,14 @@
         "answer": [
             "A"
         ],
+        "model_extract_response": {
+            "response": "D",
+            "status": "success",
+            "token_cost": 1042
+        },
+        "extracted_answers": [
+            "D"
+        ],
         "repetitions": [
             {
                 "repetition_text": "- 赵阳是赵丽的爷爷的外甥",
@@ -1277,6 +1744,14 @@
         "token_cost": 2901,
         "answer": [
             "B",
+            "C"
+        ],
+        "model_extract_response": {
+            "response": "C",
+            "status": "success",
+            "token_cost": 2733
+        },
+        "extracted_answers": [
             "C"
         ],
         "repetitions": [
@@ -1303,6 +1778,12 @@
         "answer": [
             "C"
         ],
+        "model_extract_response": {
+            "response": "无法获得答案",
+            "status": "success",
+            "token_cost": 8293
+        },
+        "extracted_answers": [],
         "repetitions": [
             {
                 "repetition_text": "         |   |",
@@ -1317,6 +1798,14 @@
         "status": "success",
         "token_cost": 2264,
         "answer": [
+            "B"
+        ],
+        "model_extract_response": {
+            "response": "B",
+            "status": "success",
+            "token_cost": 2064
+        },
+        "extracted_answers": [
             "B"
         ],
         "repetitions": [
@@ -1335,6 +1824,14 @@
         "answer": [
             "D"
         ],
+        "model_extract_response": {
+            "response": "D",
+            "status": "success",
+            "token_cost": 1004
+        },
+        "extracted_answers": [
+            "D"
+        ],
         "repetitions": [
             {
                 "repetition_text": "- Start university = 4 years  ",
@@ -1349,6 +1846,14 @@
         "status": "success",
         "token_cost": 1204,
         "answer": [
+            "D"
+        ],
+        "model_extract_response": {
+            "response": "D",
+            "status": "success",
+            "token_cost": 974
+        },
+        "extracted_answers": [
             "D"
         ],
         "repetitions": [
@@ -1367,6 +1872,12 @@
         "answer": [
             "D"
         ],
+        "model_extract_response": {
+            "response": "无法获得答案",
+            "status": "success",
+            "token_cost": 600
+        },
+        "extracted_answers": [],
         "repetitions": [
             {
                 "repetition_text": "→ So this is correct",
@@ -1385,6 +1896,16 @@
             "B",
             "C"
         ],
+        "model_extract_response": {
+            "response": "B、C、D",
+            "status": "success",
+            "token_cost": 851
+        },
+        "extracted_answers": [
+            "B",
+            "C",
+            "D"
+        ],
         "repetitions": [
             {
                 "repetition_text": "- 工具：**时间差**",
@@ -1402,6 +1923,14 @@
             "A",
             "B",
             "C"
+        ],
+        "model_extract_response": {
+            "response": "A",
+            "status": "success",
+            "token_cost": 804
+        },
+        "extracted_answers": [
+            "A"
         ],
         "repetitions": [
             {
@@ -1440,6 +1969,14 @@
             "A",
             "B"
         ],
+        "model_extract_response": {
+            "response": "D",
+            "status": "success",
+            "token_cost": 1184
+        },
+        "extracted_answers": [
+            "D"
+        ],
         "repetitions": [
             {
                 "repetition_text": "- 王处一在第 1 位",
@@ -1454,6 +1991,14 @@
         "status": "success",
         "token_cost": 1238,
         "answer": [
+            "D"
+        ],
+        "model_extract_response": {
+            "response": "D",
+            "status": "success",
+            "token_cost": 1038
+        },
+        "extracted_answers": [
             "D"
         ],
         "repetitions": [
@@ -1471,6 +2016,14 @@
         "token_cost": 1366,
         "answer": [
             "B"
+        ],
+        "model_extract_response": {
+            "response": "C",
+            "status": "success",
+            "token_cost": 1074
+        },
+        "extracted_answers": [
+            "C"
         ],
         "repetitions": [
             {
@@ -1497,6 +2050,14 @@
             "B",
             "C"
         ],
+        "model_extract_response": {
+            "response": "D",
+            "status": "success",
+            "token_cost": 1017
+        },
+        "extracted_answers": [
+            "D"
+        ],
         "repetitions": [
             {
                 "repetition_text": "- **东在西的左边**：正确",
@@ -1517,6 +2078,14 @@
         "answer": [
             "B"
         ],
+        "model_extract_response": {
+            "response": "C",
+            "status": "success",
+            "token_cost": 1196
+        },
+        "extracted_answers": [
+            "C"
+        ],
         "repetitions": [
             {
                 "repetition_text": "**西侧花盆在东侧花盘右边**",
@@ -1531,6 +2100,14 @@
         "status": "success",
         "token_cost": 1404,
         "answer": [
+            "A"
+        ],
+        "model_extract_response": {
+            "response": "A",
+            "status": "success",
+            "token_cost": 1173
+        },
+        "extracted_answers": [
             "A"
         ],
         "repetitions": [
@@ -1549,6 +2126,14 @@
         "answer": [
             "B"
         ],
+        "model_extract_response": {
+            "response": "B",
+            "status": "success",
+            "token_cost": 1252
+        },
+        "extracted_answers": [
+            "B"
+        ],
         "repetitions": [
             {
                 "repetition_text": "- **西侧花盆在东侧花盆右边**",
@@ -1564,6 +2149,14 @@
         "token_cost": 2129,
         "answer": [
             "D"
+        ],
+        "model_extract_response": {
+            "response": "C",
+            "status": "success",
+            "token_cost": 1915
+        },
+        "extracted_answers": [
+            "C"
         ],
         "repetitions": [
             {
@@ -1589,6 +2182,14 @@
         "answer": [
             "D"
         ],
+        "model_extract_response": {
+            "response": "A",
+            "status": "success",
+            "token_cost": 970
+        },
+        "extracted_answers": [
+            "A"
+        ],
         "repetitions": [
             {
                 "repetition_text": "波斯菊在月子的**左面**",
@@ -1604,6 +2205,14 @@
         "token_cost": 2966,
         "answer": [
             "B"
+        ],
+        "model_extract_response": {
+            "response": "C",
+            "status": "success",
+            "token_cost": 2859
+        },
+        "extracted_answers": [
+            "C"
         ],
         "repetitions": [
             {
@@ -1621,6 +2230,14 @@
         "answer": [
             "C"
         ],
+        "model_extract_response": {
+            "response": "D",
+            "status": "success",
+            "token_cost": 1451
+        },
+        "extracted_answers": [
+            "D"
+        ],
         "repetitions": [
             {
                 "repetition_text": "- Mary is the first to the right of David → OK  ",
@@ -1636,6 +2253,14 @@
         "token_cost": 1491,
         "answer": [
             "D"
+        ],
+        "model_extract_response": {
+            "response": "A",
+            "status": "success",
+            "token_cost": 1310
+        },
+        "extracted_answers": [
+            "A"
         ],
         "repetitions": [
             {
@@ -1653,6 +2278,14 @@
         "answer": [
             "A",
             "C"
+        ],
+        "model_extract_response": {
+            "response": "D",
+            "status": "success",
+            "token_cost": 3972
+        },
+        "extracted_answers": [
+            "D"
         ],
         "repetitions": [
             {
@@ -1678,6 +2311,12 @@
         "answer": [
             "D"
         ],
+        "model_extract_response": {
+            "response": "无法获得答案",
+            "status": "success",
+            "token_cost": 8297
+        },
+        "extracted_answers": [],
         "repetitions": [
             {
                 "repetition_text": "       |     |",
@@ -1693,6 +2332,14 @@
         "token_cost": 1838,
         "answer": [
             "B"
+        ],
+        "model_extract_response": {
+            "response": "D",
+            "status": "success",
+            "token_cost": 1730
+        },
+        "extracted_answers": [
+            "D"
         ],
         "repetitions": [
             {
@@ -1710,6 +2357,14 @@
         "answer": [
             "D"
         ],
+        "model_extract_response": {
+            "response": "D",
+            "status": "success",
+            "token_cost": 2116
+        },
+        "extracted_answers": [
+            "D"
+        ],
         "repetitions": [
             {
                 "repetition_text": "- **Tier 3**: E: Peony, W: ?",
@@ -1724,6 +2379,14 @@
         "status": "success",
         "token_cost": 1492,
         "answer": [
+            "C"
+        ],
+        "model_extract_response": {
+            "response": "C",
+            "status": "success",
+            "token_cost": 1288
+        },
+        "extracted_answers": [
             "C"
         ],
         "repetitions": [
