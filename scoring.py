@@ -6,6 +6,7 @@
 
 import json
 from typing import Literal
+from string import ascii_uppercase
 
 def single_score(standard_answer: list[str], model_answer: list[str], mode: Literal['strict', 'lenient']) -> float:
     """计算单个模型回答的得分
@@ -55,8 +56,30 @@ def file_score(json_path: str, mode: Literal['strict', 'lenient']):
     with open(json_path, 'r', encoding='utf8') as f:
         data = json.load(f)
     
-    standard_answers: list[list[str]] = [item['answer'] for item in data]
-    model_answers: list[list[str]] = [item['extracted_answers'] for item in data]
+    # standard_answers: list[list[str]] = [item['answer'] for item in data]
+    standard_answers: list[list[str]] = []
+    for item in data:
+        if 'answer' in item:
+            standard_answers.append(item['answer'])
+        elif 'standard_answers' in item:
+            standard_answers.append(item['standard_answers'])
+        elif 'original' in item:
+            standard_answers.append(item['original'].get('answer', []))
+        else:
+            raise KeyError("每个数据项必须包含 'answer' 或 'standard_answers' 键")
+    # model_answers: list[list[str]] = [item['extracted_answers'] for item in data]
+    model_answers: list[list[str]] = []
+    for item in data:
+        if 'extracted_answers' in item:
+            item_answers = item['extracted_answers']
+            if len(item_answers) == 0:
+                if 'response' in item and item['response'].strip()[0] in ascii_uppercase:
+                    item_answers = [item['response'].strip()[0]]
+                else:
+                    item_answers = []
+                model_answers.append(item_answers)
+            else:
+                model_answers.append(item_answers)
 
     avg_score = batch_score(standard_answers, model_answers, mode)
     print(f'试题数量: {len(data)}')
