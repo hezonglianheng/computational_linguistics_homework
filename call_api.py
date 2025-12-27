@@ -61,32 +61,36 @@ def _callapi(api_key: str, base_url: str, model: str, context: str) -> dict[str,
         }
 
 async def _callapi_async(api_key: str, base_url: str, model: str, context: str) -> dict[str, Any]:
-    """异步调用OpenAI API接口，返回与同步版一致的结构"""
+    """异步调用OpenAI API接口，返回与同步版一致的结构。
 
-    client = openai.AsyncOpenAI(api_key=api_key, base_url=base_url)
+    使用异步上下文管理器确保在事件循环仍然处于活动状态时正确关闭底层 httpx 连接，
+    避免出现 "Task exception was never retrieved" 与 "Event loop is closed" 的关闭异常。
+    """
+
     try:
-        if model.startswith("qwen3"):
-            response = await client.chat.completions.create(
-                model=model,
-                messages=[
-                    {"role": "user", "content": context}
-                ],
-                temperature=0.0,
-                extra_body={"enable_thinking": False}
-            )
-        else:
-            response = await client.chat.completions.create(
-                model=model,
-                messages=[
-                    {"role": "user", "content": context}
-                ], 
-                temperature=0.0,
-            )
-        return {
-            'response': response.choices[0].message.content,
-            'status': "success",
-            'token_cost': response.usage.total_tokens,
-        }
+        async with openai.AsyncOpenAI(api_key=api_key, base_url=base_url) as client:
+            if model.startswith("qwen3"):
+                response = await client.chat.completions.create(
+                    model=model,
+                    messages=[
+                        {"role": "user", "content": context}
+                    ],
+                    temperature=0.0,
+                    extra_body={"enable_thinking": False}
+                )
+            else:
+                response = await client.chat.completions.create(
+                    model=model,
+                    messages=[
+                        {"role": "user", "content": context}
+                    ], 
+                    temperature=0.0,
+                )
+            return {
+                'response': response.choices[0].message.content,
+                'status': "success",
+                'token_cost': response.usage.total_tokens,
+            }
     except Exception as e:
         return {
             'response': str(e),
