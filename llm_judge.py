@@ -11,8 +11,9 @@ from collections import defaultdict
 import openai
 import requests
 
-zhipu_api_key = "848fa68b35494bb9933b0bb1efe82784.ro5E61JcZeJhOwiH"
-openrouter_key = "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"
+# 移除原有的API Key，以保护私密数据
+zhipu_api_key = ""
+openrouter_key = ""
 client = openai.OpenAI(api_key=openrouter_key, base_url="https://openrouter.ai/api/v1")
 client_flash = ZhipuAI(api_key=zhipu_api_key)
 
